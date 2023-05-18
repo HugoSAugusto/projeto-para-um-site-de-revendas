@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+:root{
+    --primary:#208185;
+    --primary-dark:#526E70;
+    --primary-light:#03828696;
+
+    --secundary:#b1d8f2;
+
+    --tristy:#306B70;
+}
+/*reiniciando o sistema de posição*/
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header*/
+header{
+    background-color: var(--primary-dark);
+    padding: 5%;
+
+    color: white;
+
+    box-shadow: 0px 5px 5px gray;
+}
+
+header img{
+    text-align: none;
+    
+}
+
+header  h1{
+    text-align: center;
+    font-size: 4em;
+    
+}
+
+header p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/*main*/
+
+main{
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: center;
+
+    padding: 2%;
+    
+    background-color: var(--primary-light);
+}
+
+main div{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.521);
+
+    background-color: white;
+    border-radius: 20px;
+    
+    padding: 7px;
+    margin: 1%;
+}
+main img{
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.box a{
+    text-decoration: dashed;
+    font-size: 1em;
+}
+a:hover{
+    color: black;
+    font-weight: bolder;
+}
+
+
+.box:hover {
+    padding: 1%;
+    height: 900%;
+
+    box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.521);
+    
+    transition: all 0.3s;
+    
+}
